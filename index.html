@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syed Iliyaz - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">SI</h1>
+            <nav>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Project</a></li>
+                    <li><a href="contact.html">Contac</a></li>
+                </ul>
+            </nav>
+            <div class="clock" id="clock"></div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h4 class="hero-subtitle">Hello, I'm</h4>
+                    <h1 class="hero-title">Syed Iliyaz</h1>
+                    <h2 class="hero-tagline">Web Developer & Designer</h2>
+                    <p class="hero-description">Creating beautiful, functional digital experiences that make an impact.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+     <div class="hero-image">
+    <img src="images/image.jpg" alt="Syed Iliyaz" class="profile-image">
+</div>
+<style>
+    /* Hero Section Styles */
+.hero-image {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 5px solid #4361ee; /* Blue border */
+    background: linear-gradient(135deg, #4361ee, #4cc9f0); /* Blue gradient background */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover .profile-image {
+    transform: scale(1.05);
+}
+
+/* Animation for the image container */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+}
+</style>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        
+        <section class="about container" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I'm a passionate web developer with expertise in creating modern, responsive websites and applications. With a keen eye for design and a focus on user experience, I build digital solutions that are both beautiful and functional.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>UI/UX Design</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    </div>
+            </div>
+        </section>
+
+        <section class="projects container" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #4a6fa5;"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with product listings, cart functionality, and secure checkout.</p>
+                        <div class="project-tech">html css js</div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #6d4a5a;"></div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio site showcasing creative work with smooth animations.</p>
+                        <div class="project-tech">HTML5, CSS3, JavaScript</div>
+                        <a href="https://iliyazzzzzs.github.io/portfolio/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"style="background-color: #4a8d7c;"></div>
+                    <div class="project-info">
+                        <h3>Virtual shopping ai</h3>
+                        <p>An AI chatbot specially for shopping</p>
+                        <div class="project-tech">py,js</div>
+                        <a href="https://iliyaz-456.github.io/virrtualshopAI/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="projects.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </section>
+
+        <section class="todo-section container">
+            <div class="todo-container">
+                <h2 class="section-title">My Task Manager</h2>
+                <p class="section-subtitle">Stay organized with this interactive to-do list</p>
+                
+                <form id="advanced-todo-form">
+                    <div class="input-group">
+                        <input type="text" id="advanced-todo-input" placeholder="What needs to be done?" required />
+                        <select id="priority-select">
+                            <option value="normal">Normal</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </div>
+                </form>
+                
+                <div class="todo-controls">
+                    <button id="filter-all" class="active">All</button>
+                    <button id="filter-active">Active</button>
+                    <button id="filter-completed">Completed</button>
+                </div>
+                
+                <ul id="advanced-todo-list"></ul>
+                
+                <div class="todo-stats">
+                    <span id="tasks-remaining">0 tasks left</span>
+                    <button id="clear-completed">Clear completed</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Syed Iliyaz</h3>
+                    <p>Creating digital experiences that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> syediliyaz803@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 938199xxx6</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://github.com/iliyaz-456"><i class="fab fa-github"></i></a>
+                        <a href="//www.linkedin.com/in/syediliyaz18"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/its___iliyaz/?locale=uken1&hl=am-et"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Syed Iliyaz. All rights reserved.</p>
+                <div class="footer-clock" id="footer-clock"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
